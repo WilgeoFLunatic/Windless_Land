@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 8500766162671053770}
   - component: {fileID: 1594384436184950333}
   - component: {fileID: 3580925975961704884}
-  - component: {fileID: -3096457370396336314}
+  - component: {fileID: 55749007511497826}
   m_Layer: 0
   m_Name: ChestDynmaic
   m_TagString: Untagged
@@ -167,7 +167,7 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &-3096457370396336314
+--- !u!114 &55749007511497826
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -176,8 +176,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 1392110912951090898}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 31edae09a3da1994bb94f67c8baa3bd7, type: 3}
+  m_Script: {fileID: 11500000, guid: 741f70851477d824a9f603294879b160, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::WindReceiver
+  m_EditorClassIdentifier: Assembly-CSharp::Chest
   powerBouns: 1000
   windResistance: 1

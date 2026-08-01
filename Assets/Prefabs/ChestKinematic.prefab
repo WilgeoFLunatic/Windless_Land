@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 4711938274601758630}
   - component: {fileID: 3645006210632802928}
   - component: {fileID: -2086776096238707797}
-  - component: {fileID: -3542637588757910045}
+  - component: {fileID: 4118525282691112497}
   m_Layer: 0
   m_Name: ChestKinematic
   m_TagString: Untagged
@@ -167,7 +167,7 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &-3542637588757910045
+--- !u!114 &4118525282691112497
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -176,8 +176,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 7155986860903967222}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 31edae09a3da1994bb94f67c8baa3bd7, type: 3}
+  m_Script: {fileID: 11500000, guid: 741f70851477d824a9f603294879b160, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::WindReceiver
-  powerBouns: 10
+  m_EditorClassIdentifier: Assembly-CSharp::Chest
+  powerBouns: 1000
   windResistance: 1

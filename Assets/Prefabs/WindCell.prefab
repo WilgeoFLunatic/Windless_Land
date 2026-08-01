@@ -155,4 +155,4 @@ MonoBehaviour:
   direction: {x: 0, y: 0}
   power: 0
   duration: 0.05
-  isBlock: 0
+  windPrefab: {fileID: 2730047565527815668}

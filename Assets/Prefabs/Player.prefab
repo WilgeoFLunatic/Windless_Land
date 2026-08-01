@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 9164365392781164251}
   - component: {fileID: -1242537372433380741}
   - component: {fileID: 4957507457676191428}
-  - component: {fileID: -4790177031721038134}
+  - component: {fileID: 3889393328789291518}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -363,7 +363,7 @@ MonoBehaviour:
   windPrefab: {fileID: 2730047565527815668, guid: 62c7e2e9a82dca149abddef967a45492, type: 3}
   _transform: {fileID: 7044802783311568802}
   castCoolDown: 1
---- !u!114 &-4790177031721038134
+--- !u!114 &3889393328789291518
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -372,8 +372,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 6241556299039489443}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 31edae09a3da1994bb94f67c8baa3bd7, type: 3}
+  m_Script: {fileID: 11500000, guid: a969f3402adbcd04595920639035dcb4, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::WindReceiver
+  m_EditorClassIdentifier: Assembly-CSharp::WindToPlayer
   powerBouns: 600
   windResistance: 1

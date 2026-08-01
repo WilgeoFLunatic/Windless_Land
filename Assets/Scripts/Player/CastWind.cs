@@ -78,13 +78,20 @@ public class CastWind : MonoBehaviour
                 : Vector2.down;
         }
 
+        //summon single wind
+        Vector3 spawnPos = transform.position + (Vector3)windDirection * posSetup + (Vector3)windDirection * 0.1f;
+        GameObject obj = Instantiate(windPrefab, spawnPos, Quaternion.identity);
+        WindCell wind = obj.GetComponent<WindCell>();
+        if (wind != null)
+        {
+            wind.SetWind(windDirection, windPower, windPrefab);
+        }
 
-
-        // Éú³É·ç
+        /*
+        // summon continues wind
         for (int i = 0; i < windPower; i++)
         {
-            Vector3 spawnPos = transform.position
-                             + (Vector3)windDirection * (i + posSetup);
+            Vector3 spawnPos = transform.position + (Vector3)windDirection * (i + posSetup);
 
 
             GameObject obj = Instantiate(
@@ -105,5 +112,7 @@ public class CastWind : MonoBehaviour
                 );
             }
         }
+        */
+
     }
 }
