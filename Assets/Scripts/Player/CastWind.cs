@@ -11,7 +11,7 @@ public class CastWind : MonoBehaviour
     private InputAction _attackAction;
     private InputAction _selfCastAction;
     private bool isSelfCast = false;
-    private int windPower = 3;
+    public int windPower = 3;
     private float timer = 0;
     public float castCoolDown = 0.5f;
 

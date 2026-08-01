@@ -18,6 +18,7 @@ GameObject:
   - component: {fileID: -1242537372433380741}
   - component: {fileID: 4957507457676191428}
   - component: {fileID: 3889393328789291518}
+  - component: {fileID: -5736218385357841239}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -362,6 +363,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::CastWind
   windPrefab: {fileID: 2730047565527815668, guid: 62c7e2e9a82dca149abddef967a45492, type: 3}
   _transform: {fileID: 7044802783311568802}
+  windPower: 3
   castCoolDown: 1
 --- !u!114 &3889393328789291518
 MonoBehaviour:
@@ -377,3 +379,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::WindToPlayer
   powerBouns: 600
   windResistance: 1
+--- !u!114 &-5736218385357841239
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6241556299039489443}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 669328a54e0cbb842b2c5dc5cbb52c88, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ChargeWind
