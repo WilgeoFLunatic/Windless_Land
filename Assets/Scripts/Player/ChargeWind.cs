@@ -1,8 +1,10 @@
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
 public class ChargeWind : MonoBehaviour
 {
+    public List<float> windCharge = new List<float>();
     private PlayerInput _playerInput;
     private InputAction _chargeAction;
     void Awake()
@@ -14,7 +16,7 @@ public class ChargeWind : MonoBehaviour
     {
         if (_chargeAction.IsPressed())
         {
-            GetComponent<CastWind>().windPower = 6;
+            GetComponent<CastWind>().windPower = (int)windCharge[0];
         }
         else
         {

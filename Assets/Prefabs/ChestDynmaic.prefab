@@ -179,5 +179,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 741f70851477d824a9f603294879b160, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Chest
-  powerBouns: 1000
+  powerBouns: 13
   windResistance: 1

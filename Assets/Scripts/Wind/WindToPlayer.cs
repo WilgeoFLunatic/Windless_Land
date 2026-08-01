@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class WindToPlayer : MonoBehaviour, IWindReceiver, IWindBlocker
 {
-    public float powerBouns = 1000f;
+    public float powerBouns = 13;
     private Rigidbody2D rb;
     [SerializeField] private float windResistance = 1f;
 
@@ -17,6 +17,6 @@ public class WindToPlayer : MonoBehaviour, IWindReceiver, IWindBlocker
 
         float realPower = power / windResistance;
         Debug.Log("power:" + power + " realPower:" + realPower);
-        rb.AddForce(direction * realPower * powerBouns);
+        rb.AddForce(direction * realPower * powerBouns, ForceMode2D.Impulse);
     }
 }
