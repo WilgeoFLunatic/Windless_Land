@@ -180,4 +180,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Chest
   powerBouns: 600
-  windResistance: 2
+  windResistance: 4

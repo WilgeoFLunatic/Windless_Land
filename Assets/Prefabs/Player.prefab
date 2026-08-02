@@ -112,7 +112,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 0.1
+  m_Mass: 1
   m_LinearDamping: 0
   m_AngularDamping: 0.05
   m_GravityScale: 3
@@ -344,9 +344,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 84d16d2e846c8bd479f354aa1f235c5d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerController
-  speed: 5
+  speed: 50
   stopDistance: 0.1
   holdPoint: {fileID: 0}
+  linearVelocityXDarg: 0.8
   inputDirection: {x: 0, y: 0}
   mouseInputDirection: {x: 0, y: 0}
 --- !u!114 &4957507457676191428
@@ -378,7 +379,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WindToPlayer
   powerBouns: 40
-  windResistance: 400
+  windResistance: 40
 --- !u!114 &-5736218385357841239
 MonoBehaviour:
   m_ObjectHideFlags: 0

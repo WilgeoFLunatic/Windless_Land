@@ -3,9 +3,10 @@ using UnityEngine.InputSystem;
 
 public class PlayerController : MonoBehaviour
 {
-    [SerializeField] private float speed = 5f;
+    [SerializeField] private float speed = 50f;
     [SerializeField] private float stopDistance = 0.1f;
     public Transform holdPoint;
+    public float linearVelocityXDarg = 0.9f;
     //public InputSystem_Actions inputControl;
     private PlayerInput _playerInput;
     private InputAction _moveAction;
@@ -85,6 +86,17 @@ public class PlayerController : MonoBehaviour
         //Keyboard and Gamepad Move Solution
         else
         {
+            if (inputDirection.x != 0)
+            {
+                rb.AddForce(
+                    new Vector2(inputDirection.x * speed, 0),
+                    ForceMode2D.Force
+                );
+            }
+            Vector2 velocity = rb.linearVelocity;
+            velocity.x *= linearVelocityXDarg;
+            rb.linearVelocity = velocity;
+
             //rb.linearVelocity = inputDirection * speed;
             /*
             if (inputDirection.x != 0)
@@ -95,11 +107,20 @@ public class PlayerController : MonoBehaviour
                 );
             }
             */
+            /*
             Vector2 velocity = rb.linearVelocity;
 
-            velocity.x = inputDirection.x * speed;
+            if (inputDirection.x != 0)
+            {
+                velocity.x = inputDirection.x * speed;
+            }
+            else
+            {
+                velocity.x *= linearVelocityXDarg;
+            }
 
             rb.linearVelocity = velocity;
+            */
 
             if (inputDirection.x > 0)
             {
