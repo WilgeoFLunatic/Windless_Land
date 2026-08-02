@@ -26,18 +26,20 @@ public class Windmill : MonoBehaviour, IWindReceiver
         CheckState();
     }
 
-    private void OnTriggerStay2D(Collider2D collision)
-    {
-        if (collision.CompareTag("Wind") || collision.name.Contains("Wind"))
-        {
-            ReceiveWind(Vector2.right, 2.0f);
-        }
-    }
+   // private void OnTriggerStay2D(Collider2D collision)
+   // {
+   //     if (collision.CompareTag("Wind") || collision.name.Contains("Wind"))
+    //    {
+    //        ReceiveWind(Vector2.right, 2.0f);
+    //    }
+   // }
 
     public void ReceiveWind(Vector2 direction, float power)
     {
         currentSpeed += power * speedMultiplier * Time.deltaTime;
         currentSpeed = Mathf.Clamp(currentSpeed, -maxSpeed, maxSpeed);
+
+        
     }
 
     private void CheckState()
