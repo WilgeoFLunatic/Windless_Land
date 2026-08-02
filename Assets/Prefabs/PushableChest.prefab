@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 3580925975961704884}
   - component: {fileID: 55749007511497826}
   m_Layer: 0
-  m_Name: ChestDynmaic
+  m_Name: PushableChest
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -165,7 +165,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 1, y: 0.97}
   m_EdgeRadius: 0
 --- !u!114 &55749007511497826
 MonoBehaviour:

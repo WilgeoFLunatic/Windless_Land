@@ -19,7 +19,7 @@ GameObject:
   - component: {fileID: 4957507457676191428}
   - component: {fileID: 3889393328789291518}
   - component: {fileID: -5736218385357841239}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -88,7 +88,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 7
   m_MaskInteraction: 0
   m_Sprite: {fileID: 1665495925942026336, guid: 368f5cf536bcfd74c864da6af8348cb5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -113,7 +113,7 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 10
-  m_LinearDamping: 10
+  m_LinearDamping: 0
   m_AngularDamping: 0.05
   m_GravityScale: 3
   m_Material: {fileID: 0}
@@ -171,7 +171,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6241556299039489443}
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 3
   m_Density: 1
   m_Material: {fileID: 6200000, guid: 767a0259dba4b694abc3e3fd3d63784d, type: 2}
@@ -364,7 +364,7 @@ MonoBehaviour:
   windPrefab: {fileID: 2730047565527815668, guid: 62c7e2e9a82dca149abddef967a45492, type: 3}
   _transform: {fileID: 7044802783311568802}
   windPower: 3
-  castCoolDown: 1
+  castCoolDown: 0.3
 --- !u!114 &3889393328789291518
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -377,8 +377,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a969f3402adbcd04595920639035dcb4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WindToPlayer
-  powerBouns: 13
-  windResistance: 1
+  powerBouns: 40
+  windResistance: 4
 --- !u!114 &-5736218385357841239
 MonoBehaviour:
   m_ObjectHideFlags: 0

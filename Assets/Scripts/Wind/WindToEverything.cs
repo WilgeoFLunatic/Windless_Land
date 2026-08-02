@@ -1,11 +1,11 @@
 using UnityEngine;
 
-public class WindToEverything : MonoBehaviour//, IWindReceiver//用于接收风//,IWindBlocker用于阻挡风，
+public class WindToEverything : MonoBehaviour//, IWindReceiver//Use to receiver wind//,IWindBlocker//Use to block wind，
 {
     /*
     public void ReceiveWind(Vector2 direction, float power)
     {
-        //实现
+        //implement function
     }
     */
 }

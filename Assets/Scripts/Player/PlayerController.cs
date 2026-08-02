@@ -86,6 +86,7 @@ public class PlayerController : MonoBehaviour
         else
         {
             //rb.linearVelocity = inputDirection * speed;
+            /*
             if (inputDirection.x != 0)
             {
                 rb.linearVelocity = new Vector2(
@@ -93,6 +94,13 @@ public class PlayerController : MonoBehaviour
                     rb.linearVelocity.y
                 );
             }
+            */
+            Vector2 velocity = rb.linearVelocity;
+
+            velocity.x = inputDirection.x * speed;
+
+            rb.linearVelocity = velocity;
+
             if (inputDirection.x > 0)
             {
                 vector3Meta.x = 1;
