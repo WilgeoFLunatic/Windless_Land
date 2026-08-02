@@ -365,7 +365,7 @@ MonoBehaviour:
   windPrefab: {fileID: 2730047565527815668, guid: 62c7e2e9a82dca149abddef967a45492, type: 3}
   _transform: {fileID: 7044802783311568802}
   windPower: 3
-  castCoolDown: 0.3
+  castCoolDown: 0.6
 --- !u!114 &3889393328789291518
 MonoBehaviour:
   m_ObjectHideFlags: 0
