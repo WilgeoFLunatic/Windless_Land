@@ -14,7 +14,7 @@ public class WindToChest : MonoBehaviour, IWindBlocker, IWindReceiver
 
     public void ReceiveWind(Vector2 direction, float power)
     {
-
+        Debug.Log("WindToChest");
         float realPower = power / windResistance;
         Debug.Log("power:" + power + " realPower:" + realPower);
         rb.AddForce(direction * realPower * powerBouns, ForceMode2D.Impulse);

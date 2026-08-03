@@ -9,16 +9,27 @@ public class WindCell : MonoBehaviour
     public float duration = 0.5f;
 
     public GameObject windPrefab;
+    public GameObject windEffect;
 
+    private Transform windPos;
 
     private bool isBlock = false;
-
+    void Awake()
+    {
+        windPos = gameObject.transform;
+    }
 
 
 
     void Start()
     {
+        WindEffect();
         Destroy(gameObject, duration);
+    }
+
+    public void WindEffect()
+    {
+        Instantiate(windEffect, windPos);
     }
 
 
