@@ -392,5 +392,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 669328a54e0cbb842b2c5dc5cbb52c88, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ChargeWind
-  windCharge:
+  chargeMax: 2
+  windChargeLv:
   - 4
+  - 5
+  - 6

@@ -18,6 +18,10 @@ public class BinaryStateObj : MonoBehaviour
         {
             return;
         }
+        if (!isActivated)
+        {
+            return;
+        }
         if (timer >= durationObj)
         {
             Deactivate();
