@@ -9,7 +9,7 @@ public class WindToFan : MonoBehaviour, IWindReceiver
     public float powerEffectDurationBouns = 1f;
     public float rotateSpeedBouns = 500f;
     public float currentPower;
-    public float rotateDrag = 0.9f;
+    public float rotateDrag = 0.99f;
 
     private float timer;
     private float targetSpeed;

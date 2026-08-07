@@ -25,6 +25,7 @@ public class BinaryStateObj : MonoBehaviour
         if (timer >= durationObj)
         {
             Deactivate();
+            isActivated = false;
         }
     }
     public void Activate()

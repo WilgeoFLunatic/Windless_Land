@@ -15,10 +15,13 @@ GameObject:
   - component: {fileID: -6297112206304034417}
   - component: {fileID: -6077149776309625419}
   - component: {fileID: 9164365392781164251}
+  - component: {fileID: -859111179249444379}
   - component: {fileID: -1242537372433380741}
   - component: {fileID: 4957507457676191428}
   - component: {fileID: 3889393328789291518}
+  - component: {fileID: 8785240329293193820}
   - component: {fileID: -5736218385357841239}
+  - component: {fileID: -1892415066567992882}
   m_Layer: 7
   m_Name: Player
   m_TagString: Untagged
@@ -90,7 +93,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 37
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 1665495925942026336, guid: 368f5cf536bcfd74c864da6af8348cb5, type: 3}
+  m_Sprite: {fileID: 8793639957104055765, guid: d9c7afb92e0ecf14887f0ee4af6f5a0b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -202,7 +205,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.56640625, y: 0.9707031}
+    oldSize: {x: 0.5625, y: 1.0625}
     newSize: {x: 2.265625, y: 3.8828125}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -332,6 +335,18 @@ MonoBehaviour:
   m_DefaultActionMap: Player
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
+--- !u!114 &-859111179249444379
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6241556299039489443}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 774a19814cdbd244281a0470a5893d0c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerAniController
 --- !u!114 &-1242537372433380741
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -364,6 +379,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::CastWind
   windPrefab: {fileID: 2730047565527815668, guid: 62c7e2e9a82dca149abddef967a45492, type: 3}
   _transform: {fileID: 7044802783311568802}
+  defaultWindPower: 3
   windPower: 3
   castCoolDown: 0.6
 --- !u!114 &3889393328789291518
@@ -380,6 +396,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::WindToPlayer
   powerBouns: 40
   windResistance: 40
+--- !u!114 &8785240329293193820
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6241556299039489443}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca0e22f4d0a94bb4c8e3235056ae552d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PhysicsCheck
+  bottom0ffset: {x: 0, y: -0.45}
+  checkRaduis: 0.1
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 1
+  isGround: 0
 --- !u!114 &-5736218385357841239
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -397,3 +431,26 @@ MonoBehaviour:
   - 4
   - 5
   - 6
+  chargeLv: 0
+--- !u!95 &-1892415066567992882
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6241556299039489443}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: df8b2e8230bdcc241a3a6b722faf9488, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0

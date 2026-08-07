@@ -119,11 +119,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &173602666 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7922513031167424633, guid: 8a230de3e7c71be4288df1b608ebf262, type: 3}
-  m_PrefabInstance: {fileID: 1249483105}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &182481182
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -277,6 +272,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1878049493}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &237469652 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2831913019306230748, guid: 8a230de3e7c71be4288df1b608ebf262, type: 3}
+  m_PrefabInstance: {fileID: 1249483105}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &274116577
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1140,6 +1140,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5554224495565609978, guid: 8a230de3e7c71be4288df1b608ebf262, type: 3}
+      propertyPath: isKeepState
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5818767158023717942, guid: 8a230de3e7c71be4288df1b608ebf262, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2.5
@@ -2248,7 +2252,7 @@ PrefabInstance:
     - target: {fileID: 1450465752417555503, guid: 5f01b71283cfc2d4db8012b98aa986a4, type: 3}
       propertyPath: 'changeStateObj.Array.data[0]'
       value: 
-      objectReference: {fileID: 173602666}
+      objectReference: {fileID: 237469652}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
