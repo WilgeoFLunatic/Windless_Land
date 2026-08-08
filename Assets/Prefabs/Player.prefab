@@ -365,6 +365,7 @@ MonoBehaviour:
   linearVelocityXDarg: 0.8
   inputDirection: {x: 0, y: 0}
   mouseInputDirection: {x: 0, y: 0}
+  isDead: 0
 --- !u!114 &4957507457676191428
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -382,6 +383,7 @@ MonoBehaviour:
   defaultWindPower: 3
   windPower: 3
   castCoolDown: 0.6
+  isCast: 0
 --- !u!114 &3889393328789291518
 MonoBehaviour:
   m_ObjectHideFlags: 0

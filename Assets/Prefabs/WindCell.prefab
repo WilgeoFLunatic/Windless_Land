@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 4572578764821211399}
   - component: {fileID: 2404169435166577630}
   - component: {fileID: 5958565841414492989}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: WindCell
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -40,6 +40,7 @@ public class CastWind : MonoBehaviour
             else
             {
                 isSelfCast = false;
+                ModifyWindLayer(isSelfCast);
             }
 
             if (timer >= castCoolDown && !isSelfCast)
@@ -51,11 +52,23 @@ public class CastWind : MonoBehaviour
             else if (timer >= castCoolDown && isSelfCast)
             {
                 int posSetup = 0;
+                ModifyWindLayer(isSelfCast);
                 TryCast(posSetup);
                 timer = 0;
             }
         }
 
+    }
+    void ModifyWindLayer(bool isSelf)
+    {
+        if (isSelf)
+        {
+            windPrefab.GetComponent<Collider2D>().excludeLayers = 0;
+        }
+        else
+        {
+            windPrefab.GetComponent<Collider2D>().excludeLayers = LayerMask.GetMask("Player");
+        }
     }
 
     void TryCast(int posSetup)
