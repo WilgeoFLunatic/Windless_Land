@@ -16,11 +16,15 @@ public class CastWind : MonoBehaviour
     private float timer = 0;
     public float castCoolDown = 0.5f;
 
+    private PlayerAniController _playerAniController;
+    public bool isCast;
+
     void Awake()
     {
         windPower = defaultWindPower;
         playerPos = _transform.localPosition;
         _playerInput = GetComponent<PlayerInput>();
+        _playerAniController = GetComponent<PlayerAniController>();
         _attackAction = _playerInput.actions["Attack"];
         _selfCastAction = _playerInput.actions["SelfCast"];
     }
@@ -56,7 +60,8 @@ public class CastWind : MonoBehaviour
 
     void TryCast(int posSetup)
     {
-
+        _playerAniController.PlayerAttack();
+        isCast = true;
 
         Vector3 mousePos = Camera.main.ScreenToWorldPoint(Mouse.current.position.ReadValue());
         mousePos.z = 0;
@@ -83,7 +88,7 @@ public class CastWind : MonoBehaviour
         }
 
         //summon single wind
-        Vector3 spawnPos = transform.position + (Vector3)windDirection * posSetup * 0.75f; //+ (Vector3)windDirection * 0.1f;
+        Vector3 spawnPos = transform.position + (Vector3)windDirection * posSetup * 0.75f + Vector3.up * 0.5f; //+ (Vector3)windDirection * 0.1f;
         GameObject obj = Instantiate(windPrefab, spawnPos, Quaternion.identity);
         WindCell wind = obj.GetComponent<WindCell>();
         if (wind != null)

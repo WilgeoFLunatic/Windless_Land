@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 8646043547564292535}
   - component: {fileID: 2880640352495436057}
   - component: {fileID: 5078431741325296077}
-  m_Layer: 0
+  m_Layer: 17
   m_Name: Fanblade
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -181,6 +181,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::WindToFan
   changeStateObj: []
   duration: 5
+  isPowerEffectDuration: 0
+  powerEffectDurationBouns: 1
   rotateSpeedBouns: 500
   currentPower: 0
   rotateDrag: 0.99

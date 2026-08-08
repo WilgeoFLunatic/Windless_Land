@@ -1,3 +1,4 @@
+using NUnit.Framework;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -21,6 +22,8 @@ public class PlayerController : MonoBehaviour
     private Vector3 holdPointPos = new Vector3(1, 0, 0);
     //private Animator anim;
     private bool useMouse = false;
+
+    public bool isDead = false;
     void Awake()
     {
         _playerInput = GetComponent<PlayerInput>();
@@ -38,23 +41,13 @@ public class PlayerController : MonoBehaviour
     }
     void Update()
     {
-
         inputDirection = _moveAction.ReadValue<Vector2>();
-
-        //SetAnim();
     }
 
     void FixedUpdate()
     {
         HandleMove();
     }
-    /*
-    void SetAnim()
-    {
-        anim.SetFloat("velocityX", Mathf.Abs(rb.linearVelocity.x) + Mathf.Abs(rb.linearVelocityY));
-        anim.SetBool("isHold", GetComponent<PlayerInteraction>().carryingChest != null ? true : false);
-    }
-    */
     private void HandleMove()
     {
         //Mouse Move Solution
@@ -155,5 +148,19 @@ public class PlayerController : MonoBehaviour
 
     }
 
+    public void GamePaused()
+    {
+        _playerInput.enabled = false;
+    }
+    public void GameContinues()
+    {
+        _playerInput.enabled = true;
+    }
 
+
+    public void PlayerDead()
+    {
+        isDead = true;
+        _playerInput.enabled = false;
+    }
 }
