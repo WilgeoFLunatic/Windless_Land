@@ -17,7 +17,7 @@ public class PlayerController : MonoBehaviour
     private Vector3 mousePos;
     public Vector2 facingDirection { get; private set; } = Vector2.right;
     private Rigidbody2D rb;
-    private Vector3 vector3Meta = Vector3.one;
+    public Vector3 vector3Meta = Vector3.one;
     private Vector2 vector2Meta = Vector2.one;
     private Vector3 holdPointPos = new Vector3(1, 0, 0);
     //private Animator anim;

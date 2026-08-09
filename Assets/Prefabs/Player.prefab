@@ -22,9 +22,10 @@ GameObject:
   - component: {fileID: 8785240329293193820}
   - component: {fileID: -5736218385357841239}
   - component: {fileID: -1892415066567992882}
+  - component: {fileID: 8757572175769006418}
   m_Layer: 7
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -365,6 +366,7 @@ MonoBehaviour:
   linearVelocityXDarg: 0.8
   inputDirection: {x: 0, y: 0}
   mouseInputDirection: {x: 0, y: 0}
+  vector3Meta: {x: 1, y: 1, z: 1}
   isDead: 0
 --- !u!114 &4957507457676191428
 MonoBehaviour:
@@ -428,9 +430,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 669328a54e0cbb842b2c5dc5cbb52c88, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ChargeWind
-  chargeMax: 2
+  chargeMax: 1
   windChargeLv:
-  - 4
+  - 5
   - 5
   - 6
   chargeLv: 0
@@ -456,3 +458,16 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &8757572175769006418
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6241556299039489443}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b45807ebbc013bf41b665a9a4588318c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerCheck
+  moveSpeed: 5
