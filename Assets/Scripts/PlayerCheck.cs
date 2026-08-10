@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class PlayerCheck : MonoBehaviour
 {
+    public Transform spawnPoint;
     private Transform cameraPos;
     public float moveSpeed = 5f;
 
@@ -37,6 +38,13 @@ public class PlayerCheck : MonoBehaviour
         if (collision.CompareTag("Respawn"))
         {
             cameraPos = collision.GetComponent<CheckPoint>().cameraPos;
+            CheckPoint checkPoint = collision.gameObject.GetComponent<CheckPoint>();
+
+            if (checkPoint != null && checkPoint.audioSet != null)
+            {
+                checkPoint.audioSet.SetActive(true);
+            }
+            spawnPoint = collision.transform;
             SetCameraPos();
         }
     }

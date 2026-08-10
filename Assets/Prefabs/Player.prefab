@@ -23,6 +23,7 @@ GameObject:
   - component: {fileID: -5736218385357841239}
   - component: {fileID: -1892415066567992882}
   - component: {fileID: 8757572175769006418}
+  - component: {fileID: 108240681729524270}
   m_Layer: 7
   m_Name: Player
   m_TagString: Player
@@ -470,4 +471,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b45807ebbc013bf41b665a9a4588318c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerCheck
+  spawnPoint: {fileID: 0}
   moveSpeed: 5
+--- !u!114 &108240681729524270
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6241556299039489443}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0ed965c8f08766458bb426caa1b848c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AudioDefination
+  _playAudioEvent: {fileID: 11400000, guid: 9868e18e4665fb7448579116ddd8262c, type: 2}
+  _audioClip: {fileID: 8300000, guid: 6edd0b85e42670746a64e68faa283c67, type: 3}
+  playOnEnable: 0

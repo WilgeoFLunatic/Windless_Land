@@ -74,6 +74,7 @@ public class CastWind : MonoBehaviour
     void TryCast(int posSetup)
     {
         _playerAniController.PlayerAttack();
+        PlayCastAudio();
         isCast = true;
 
         Vector3 mousePos = Camera.main.ScreenToWorldPoint(Mouse.current.position.ReadValue());
@@ -141,5 +142,10 @@ public class CastWind : MonoBehaviour
         }
         */
 
+    }
+
+    private void PlayCastAudio()
+    {
+        GetComponent<AudioDefination>().PlayAudioClip();
     }
 }
