@@ -86,7 +86,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 8003568443855934575, guid: b402b2be860d24045953ce8bf5ad7e0e, type: 3}
+  m_Sprite: {fileID: -9029649130915171707, guid: 457ff06f3a129ac45ae8f3de3d56a90b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -283,7 +283,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5818767158023717942}
   m_Layer: 0
-  m_Name: Door_wooden
+  m_Name: Door_
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

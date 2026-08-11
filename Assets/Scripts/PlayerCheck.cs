@@ -7,6 +7,7 @@ public class PlayerCheck : MonoBehaviour
     public float moveSpeed = 5f;
 
     private bool moving;
+    /*
     public void SetCameraPos()
     {
         moving = true;
@@ -32,12 +33,12 @@ public class PlayerCheck : MonoBehaviour
             }
         }
     }
-
+*/
     void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Respawn"))
         {
-            cameraPos = collision.GetComponent<CheckPoint>().cameraPos;
+            //cameraPos = collision.GetComponent<CheckPoint>().cameraPos;
             CheckPoint checkPoint = collision.gameObject.GetComponent<CheckPoint>();
 
             if (checkPoint != null && checkPoint.audioSet != null)
@@ -45,7 +46,7 @@ public class PlayerCheck : MonoBehaviour
                 checkPoint.audioSet.SetActive(true);
             }
             spawnPoint = collision.transform;
-            SetCameraPos();
+            //SetCameraPos();
         }
     }
 }
