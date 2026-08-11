@@ -41,6 +41,10 @@ public class PlayerController : MonoBehaviour
     }
     void Update()
     {
+        if (isDead)
+        {
+            return;
+        }
         inputDirection = _moveAction.ReadValue<Vector2>();
     }
 
@@ -162,5 +166,12 @@ public class PlayerController : MonoBehaviour
     {
         isDead = true;
         _playerInput.enabled = false;
+        inputDirection = Vector2.zero;
+    }
+    public void PlayerRespawn()
+    {
+        isDead = false;
+        _playerInput.enabled = true;
+        transform.position = GetComponent<PlayerCheck>().spawnPoint.position;
     }
 }

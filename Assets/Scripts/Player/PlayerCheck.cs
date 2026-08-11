@@ -7,6 +7,7 @@ public class PlayerCheck : MonoBehaviour
     public float moveSpeed = 5f;
 
     private bool moving;
+
     /*
     public void SetCameraPos()
     {
@@ -49,4 +50,5 @@ public class PlayerCheck : MonoBehaviour
             //SetCameraPos();
         }
     }
+
 }
