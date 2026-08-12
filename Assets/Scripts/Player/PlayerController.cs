@@ -1,4 +1,5 @@
 using NUnit.Framework;
+using Unity.Cinemachine;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -37,7 +38,7 @@ public class PlayerController : MonoBehaviour
             useMouse = true;
         }
 
-
+        //DontDestroyOnLoad(gameObject);
     }
     void Update()
     {
@@ -51,6 +52,10 @@ public class PlayerController : MonoBehaviour
     void FixedUpdate()
     {
         HandleMove();
+        if (rb.linearVelocityY > 50f || rb.linearVelocityY < -50f)
+        {
+            rb.linearVelocityY = 50;
+        }
     }
     private void HandleMove()
     {

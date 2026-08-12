@@ -5,6 +5,7 @@ public class WindToFan : MonoBehaviour, IWindReceiver
 {
     public List<GameObject> changeStateObj = new();
     public float duration;
+    public bool isKeepState = false;
     public bool isPowerEffectDuration = false;
     public float powerEffectDurationBouns = 1f;
     public float rotateSpeedBouns = 500f;
@@ -41,7 +42,7 @@ public class WindToFan : MonoBehaviour, IWindReceiver
         //Debug.Log("WindToFan");
         foreach (GameObject obj in objs)
         {
-            obj.GetComponent<BinaryStateObj>().Set(state, duration);
+            obj.GetComponent<BinaryStateObj>().Set(state, duration, isKeepState);
         }
     }
 

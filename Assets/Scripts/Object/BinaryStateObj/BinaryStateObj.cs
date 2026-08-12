@@ -38,8 +38,9 @@ public class BinaryStateObj : MonoBehaviour
         stateObj?.Deactivate();
     }
 
-    public void Set(bool state, float duration)
+    public void Set(bool state, float duration, bool isKeepState)
     {
+        this.isKeepState = isKeepState;
         if (!isActivated && state)
         {
             //Debug.Log("Set");

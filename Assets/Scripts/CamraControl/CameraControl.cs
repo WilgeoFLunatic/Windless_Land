@@ -4,13 +4,21 @@ using UnityEngine;
 public class CameraControl : MonoBehaviour
 {
     private CinemachineConfiner2D confiner2D;
+    private GameObject obj;
     private void Awake()
     {
         confiner2D = GetComponent<CinemachineConfiner2D>();
+
+
     }
     void Start()
     {
         GetNewCameraBounds();
+    }
+    void Update()
+    {
+        //GetNewCameraBounds();
+        //GetFollow();
     }
 
     private void GetNewCameraBounds()
@@ -21,5 +29,14 @@ public class CameraControl : MonoBehaviour
             return;
         }
         confiner2D.BoundingShape2D = obj.GetComponent<Collider2D>();
+    }
+    private void GetFollow()
+    {
+        var player = GameObject.FindGameObjectWithTag("Player");
+        if (player == null)
+        {
+            return;
+        }
+        GetComponent<CinemachineCamera>().Follow = player.transform;
     }
 }

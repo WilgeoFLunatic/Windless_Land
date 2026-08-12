@@ -6,6 +6,10 @@ public class AudioManager : MonoBehaviour
     public PlayAudioEventSO BGMEvent;
     public AudioSource FXSource;
     public AudioSource BGMSource;
+    void Awake()
+    {
+        DontDestroyOnLoad(gameObject);
+    }
     private void OnEnable()
     {
         FXEvent.OnEventRasied += OnFXEvent;
