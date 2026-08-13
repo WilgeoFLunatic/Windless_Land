@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class ShowTips : MonoBehaviour
 {
-    public string tip;
+    //public string tip;
     public GameObject blank;
 
     private TMP_Text text;
@@ -31,7 +31,7 @@ public class ShowTips : MonoBehaviour
 
     public void Show(bool isShow)
     {
-        text.text = tip;
+        //text.text = tip;
         blank.SetActive(isShow);
     }
 }

@@ -10,6 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1634521392500455192}
   - component: {fileID: 401442069260630298}
+  - component: {fileID: -5961971412397207316}
+  - component: {fileID: 4779761573193394676}
   m_Layer: 0
   m_Name: WindEffect
   m_TagString: Untagged
@@ -81,8 +83,8 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 3
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 2868101353237766674, guid: 848a7b7d91d8e3649893a041aac9d6c2, type: 3}
-  m_Color: {r: 0.96420634, g: 1, b: 0, a: 1}
+  m_Sprite: {fileID: 8605956544606621573, guid: 24de3870c5586184db9ee61c960d727f, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -91,3 +93,37 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!95 &-5961971412397207316
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5266314226953625169}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: d104d244bdd84f64f8c9fe7bb877175d, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &4779761573193394676
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5266314226953625169}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f8ecf93c47663d4d8f01b2283695567, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::WindEffect

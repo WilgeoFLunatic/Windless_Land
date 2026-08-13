@@ -29,7 +29,7 @@ public class WindCell : MonoBehaviour
 
     public void WindEffect()
     {
-        //Instantiate(windEffect, windPos.position, transform.rotation, null);
+        Instantiate(windEffect, windPos.position, transform.rotation, null);
     }
 
 
