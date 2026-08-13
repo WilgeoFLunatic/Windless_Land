@@ -150,8 +150,14 @@ public class CastWind : MonoBehaviour
         _playerController.vector3Meta = new Vector3(windDirection.x == 0 ? _playerController.vector3Meta.x : windDirection.x, 1, 1);
 
         //summon single wind
-        Vector3 spawnPos = transform.position + (Vector3)windDirection * posSetup * 0.75f + Vector3.up * 0.5f;//- (Vector3)windDirection * 0.5f; //+ (Vector3)windDirection * 0.1f;
-        GameObject obj = Instantiate(windPrefab, spawnPos, Quaternion.identity);
+        Vector3 spawnPos = transform.position + (Vector3)windDirection * posSetup * 0.75f + Vector3.up * 0.5f;
+
+        float angle = Mathf.Atan2(windDirection.y, windDirection.x) * Mathf.Rad2Deg;
+
+        Quaternion rotation = Quaternion.Euler(0, 0, angle);
+
+        GameObject obj = Instantiate(windPrefab, spawnPos, rotation);
+
         WindCell wind = obj.GetComponent<WindCell>();
         if (wind != null)
         {

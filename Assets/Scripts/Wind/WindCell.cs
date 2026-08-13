@@ -65,7 +65,7 @@ public class WindCell : MonoBehaviour
         GameObject obj = Instantiate(
             windPrefab,
             nextPos,
-            Quaternion.identity
+            transform.rotation
         );
 
 
