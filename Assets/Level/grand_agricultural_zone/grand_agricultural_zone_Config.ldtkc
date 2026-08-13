@@ -1,0 +1,137 @@
+{
+    "PixelsPerUnit": 32,
+    "CustomLevelPrefab": {
+        "instanceID": 0
+    },
+    "IntGridValueColorsVisible": false,
+    "UseCompositeCollider": true,
+    "GeometryType": 0,
+    "CreateBackgroundColor": true,
+    "CreateLevelBoundsTrigger": false,
+    "UseParallax": true,
+    "ScaleEntities": true,
+    "IntGridValues": [
+        {
+            "_key": "IntGrid_2",
+            "_asset": {
+                "fileID": 11400000,
+                "guid": "fe911938f7343b44f898aef8669a2eb4",
+                "type": 2
+            }
+        },
+        {
+            "_key": "IntGrid_3",
+            "_asset": {
+                "instanceID": 0
+            }
+        },
+        {
+            "_key": "IntGrid_4",
+            "_asset": {
+                "instanceID": 0
+            }
+        },
+        {
+            "_key": "IntGrid_5",
+            "_asset": {
+                "instanceID": 0
+            }
+        },
+        {
+            "_key": "IntGrid_6",
+            "_asset": {
+                "instanceID": 0
+            }
+        },
+        {
+            "_key": "IntGrid_7",
+            "_asset": {
+                "instanceID": 0
+            }
+        },
+        {
+            "_key": "IntGrid_8",
+            "_asset": {
+                "instanceID": 0
+            }
+        },
+        {
+            "_key": "IntGrid_9",
+            "_asset": {
+                "fileID": 11400000,
+                "guid": "fe911938f7343b44f898aef8669a2eb4",
+                "type": 2
+            }
+        }
+    ],
+    "Entities": [
+        {
+            "_key": "PlayerStart",
+            "_asset": {
+                "fileID": 6241556299039489443,
+                "guid": "1a1dee0441f9a1d44af4899c9c4d9b5a",
+                "type": 3
+            }
+        },
+        {
+            "_key": "LightCrate",
+            "_asset": {
+                "instanceID": 0
+            }
+        },
+        {
+            "_key": "HeavyCrate",
+            "_asset": {
+                "instanceID": 0
+            }
+        },
+        {
+            "_key": "Windmill",
+            "_asset": {
+                "instanceID": 0
+            }
+        },
+        {
+            "_key": "Waterwheel",
+            "_asset": {
+                "instanceID": 0
+            }
+        },
+        {
+            "_key": "BridgeButton",
+            "_asset": {
+                "instanceID": 0
+            }
+        },
+        {
+            "_key": "Gate",
+            "_asset": {
+                "instanceID": 0
+            }
+        },
+        {
+            "_key": "Bridge1",
+            "_asset": {
+                "instanceID": 0
+            }
+        },
+        {
+            "_key": "Press",
+            "_asset": {
+                "instanceID": 0
+            }
+        },
+        {
+            "_key": "Bridge2",
+            "_asset": {
+                "instanceID": 0
+            }
+        },
+        {
+            "_key": "Bridge3",
+            "_asset": {
+                "instanceID": 0
+            }
+        }
+    ]
+}
