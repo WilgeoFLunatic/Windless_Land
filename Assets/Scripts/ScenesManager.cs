@@ -5,7 +5,7 @@ using UnityEngine.UI;
 public class ScenesManager : MonoBehaviour
 {
     [Header("Scene")]
-    [SerializeField] private string targetSceneName = "SecScene";
+    [SerializeField] private string targetSceneName = "";
 
     [Header("Optional Inspector Links")]
     [SerializeField] private InputField sceneNameInput;

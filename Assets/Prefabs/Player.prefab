@@ -24,6 +24,7 @@ GameObject:
   - component: {fileID: -1892415066567992882}
   - component: {fileID: 8757572175769006418}
   - component: {fileID: 108240681729524270}
+  - component: {fileID: 6859593798252256479}
   m_Layer: 7
   m_Name: Player
   m_TagString: Player
@@ -332,6 +333,10 @@ MonoBehaviour:
       m_Calls: []
     m_ActionId: 9caa3d8a-6b2f-4e8e-8bad-6ede561bd9be
     m_ActionName: UI/TrackedDeviceOrientation
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 77a8d420-9f0f-4a50-bb74-df3103fc3bf1
+    m_ActionName: 'Player/Respawn[/Keyboard/escape]'
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: Keyboard&Mouse
   m_DefaultActionMap: Player
@@ -489,3 +494,16 @@ MonoBehaviour:
   _playAudioEvent: {fileID: 11400000, guid: 9868e18e4665fb7448579116ddd8262c, type: 2}
   _audioClip: {fileID: 8300000, guid: 6edd0b85e42670746a64e68faa283c67, type: 3}
   playOnEnable: 0
+--- !u!114 &6859593798252256479
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6241556299039489443}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1691845b43280104e9b683aa99c06939, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerRespawn
+  targetSceneName: SC_001
