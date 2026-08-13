@@ -40,6 +40,10 @@ public class PlayerController : MonoBehaviour
 
         //DontDestroyOnLoad(gameObject);
     }
+    void Start()
+    {
+        PlayerRespawn();
+    }
     void Update()
     {
         if (isDead)
@@ -177,6 +181,7 @@ public class PlayerController : MonoBehaviour
     {
         isDead = false;
         _playerInput.enabled = true;
-        transform.position = GetComponent<PlayerCheck>().spawnPoint.position;
+        transform.position = GameObject.FindGameObjectWithTag("PlayerManager").GetComponent<PlayerManager>().PlayerSpawnPoint;
+        Debug.Log("Finded" + GameObject.FindGameObjectWithTag("PlayerManager").GetComponent<PlayerManager>().PlayerSpawnPoint);
     }
 }

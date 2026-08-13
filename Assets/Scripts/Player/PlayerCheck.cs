@@ -46,7 +46,12 @@ public class PlayerCheck : MonoBehaviour
             {
                 checkPoint.audioSet.SetActive(true);
             }
-            spawnPoint = collision.transform;
+            Debug.Log("before" + GameObject.FindGameObjectWithTag("PlayerManager").GetComponent<PlayerManager>().PlayerSpawnPoint);
+            GameObject.FindGameObjectWithTag("PlayerManager").GetComponent<PlayerManager>().SetSpawnPoint(collision.transform.position);
+            Debug.Log("after" + GameObject.FindGameObjectWithTag("PlayerManager").GetComponent<PlayerManager>().PlayerSpawnPoint);
+            Debug.Log("Check " + checkPoint.transform.position);
+            Debug.Log("then" + GameObject.FindGameObjectWithTag("PlayerManager").GetComponent<PlayerManager>().PlayerSpawnPoint);
+            // = collision.transform.position;
             //SetCameraPos();
         }
     }

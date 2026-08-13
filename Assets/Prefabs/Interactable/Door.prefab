@@ -86,7 +86,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -21
   m_MaskInteraction: 0
   m_Sprite: {fileID: -9029649130915171707, guid: 457ff06f3a129ac45ae8f3de3d56a90b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -200,6 +200,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::MoveUpandDown
   startPoint: {fileID: 2378870883976261101}
   endPoint: {fileID: 7131325312310947569}
+  startPos: {x: 0, y: 0, z: 0}
+  endPos: {x: 0, y: 0, z: 0}
   duration: 1
 --- !u!114 &2445576614052795332
 MonoBehaviour:

@@ -18,6 +18,9 @@ public class CastWind : MonoBehaviour
     private PlayerAniController _playerAniController;
     public bool isCast;
     private PlayerController _playerController;
+    private Rigidbody2D rb;
+
+    public float selfCastWindPowerBouns = 1;
     void Awake()
     {
         windPower = defaultWindPower;
@@ -25,6 +28,7 @@ public class CastWind : MonoBehaviour
         _playerInput = GetComponent<PlayerInput>();
         _playerAniController = GetComponent<PlayerAniController>();
         _playerController = GetComponent<PlayerController>();
+        rb = GetComponent<Rigidbody2D>();
         _attackAction = _playerInput.actions["Attack"];
         _selfCastAction = _playerInput.actions["SelfCast"];
     }
@@ -40,7 +44,7 @@ public class CastWind : MonoBehaviour
             else
             {
                 isSelfCast = false;
-                ModifyWindLayer(isSelfCast);
+                //ModifyWindLayer(isSelfCast);
             }
 
             if (timer >= castCoolDown && !isSelfCast)
@@ -51,11 +55,21 @@ public class CastWind : MonoBehaviour
             }
             else if (timer >= castCoolDown && isSelfCast)
             {
+
+                int posSetup = 0;
+                TrySelfCast();
+                TryCast(posSetup);
+                timer = 0;
+            }
+            /*
+            else if (timer >= castCoolDown && isSelfCast)
+            {
                 int posSetup = 0;
                 ModifyWindLayer(isSelfCast);
                 TryCast(posSetup);
                 timer = 0;
             }
+            */
         }
 
     }
@@ -69,6 +83,38 @@ public class CastWind : MonoBehaviour
         {
             windPrefab.GetComponent<Collider2D>().excludeLayers = LayerMask.GetMask("Player");
         }
+    }
+    private void TrySelfCast()
+    {
+        _playerAniController.PlayerAttack();
+        PlayCastAudio();
+        isCast = true;
+        Vector3 mousePos = Camera.main.ScreenToWorldPoint(Mouse.current.position.ReadValue());
+        mousePos.z = 0;
+
+
+        Vector2 mouseDirection = mousePos - transform.position;
+
+
+        Vector2 windDirection;
+
+
+        // ÅÐ¶ÏËÄ·½Ïò
+        if (Mathf.Abs(mouseDirection.x) > Mathf.Abs(mouseDirection.y))
+        {
+            windDirection = mouseDirection.x > 0
+                ? Vector2.right
+                : Vector2.left;
+        }
+        else
+        {
+            windDirection = mouseDirection.y > 0
+                ? Vector2.up
+                : Vector2.down;
+        }
+
+        rb.AddForce(windDirection * selfCastWindPowerBouns * windPower, ForceMode2D.Impulse);
+
     }
 
     void TryCast(int posSetup)

@@ -387,6 +387,7 @@ MonoBehaviour:
   windPower: 3
   castCoolDown: 0.6
   isCast: 0
+  selfCastWindPowerBouns: 3
 --- !u!114 &3889393328789291518
 MonoBehaviour:
   m_ObjectHideFlags: 0
