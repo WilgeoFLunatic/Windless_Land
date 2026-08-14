@@ -7,6 +7,10 @@ public class CheckPoint : MonoBehaviour
     public GameObject audioSet;
     void Awake()
     {
-        spawnPoint = transform.position;
+        if (spawnPoint == Vector3.zero)
+        {
+            spawnPoint = transform.position;
+        }
+
     }
 }

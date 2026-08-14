@@ -6,8 +6,14 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/SC_000.unity
+    guid: ca0008dd23f649942ad7e580443ed154
+  - enabled: 1
     path: Assets/Scenes/SC_001.unity
     guid: 65cd1771b245f9444bc470569b73b18d
+  - enabled: 1
+    path: Assets/Scenes/SC_002.unity
+    guid: b2dbd9114879ce040b0fc7c1c0d25a8f
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0

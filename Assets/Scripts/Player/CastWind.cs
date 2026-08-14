@@ -34,6 +34,11 @@ public class CastWind : MonoBehaviour
     }
     void Update()
     {
+        if (_playerController.isDead)
+        {
+            return;
+        }
+
         timer += Time.deltaTime;
         if (_attackAction.triggered)
         {

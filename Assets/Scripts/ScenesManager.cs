@@ -71,4 +71,11 @@ public class ScenesManager : MonoBehaviour
         SetTargetScene(sceneName);
         LoadTargetScene();
     }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Player"))
+        {
+            LoadTargetScene();
+        }
+    }
 }

@@ -5,6 +5,7 @@ using UnityEngine.InputSystem;
 
 public class PlayerController : MonoBehaviour
 {
+    public GameObject RespawnObject;
     [SerializeField] private float speed = 50f;
     [SerializeField] private float stopDistance = 0.1f;
     public Transform holdPoint;
@@ -175,6 +176,7 @@ public class PlayerController : MonoBehaviour
     {
         isDead = true;
         _playerInput.enabled = false;
+        RespawnObject?.SetActive(true);
         inputDirection = Vector2.zero;
     }
     public void PlayerRespawn()

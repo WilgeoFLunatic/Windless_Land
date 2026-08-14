@@ -6,7 +6,7 @@ public class PlayerManager : MonoBehaviour
 
     void Awake()
     {
-        SetSpawnPoint(Vector3.zero);
+        SetSpawnPoint(new Vector3(-6, -2, 0));
         DontDestroyOnLoad(gameObject);
     }
 
