@@ -1,25 +1,25 @@
 fileFormatVersion: 2
-guid: 753f60f78331aa14d95d994213c7f775
+guid: 10c441075cd43c14eacbbd24011f1ef5
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1170064116241548331
-    second: grass3_0
+      213: -6259061623450483742
+    second: Wind_Rune_Sheet_0
   - first:
-      213: -2530187846264266810
-    second: grass3_1
+      213: 6228731805120991398
+    second: Wind_Rune_Sheet_1
   - first:
-      213: -8347057769162836641
-    second: grass3_2
+      213: -7960766103089042962
+    second: Wind_Rune_Sheet_2
   - first:
-      213: 6171920671103423460
-    second: grass3_3
+      213: -8003016699886612107
+    second: Wind_Rune_Sheet_3
   - first:
-      213: 5601813040008644982
-    second: grass3_4
+      213: 7250121148606049211
+    second: Wind_Rune_Sheet_4
   - first:
-      213: -8120290181894969350
-    second: grass3_5
+      213: 882054393503067922
+    second: Wind_Rune_Sheet_5
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -115,11 +115,11 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: grass3_0
+      name: Wind_Rune_Sheet_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 32
+        y: 0
         width: 32
         height: 32
       alignment: 0
@@ -130,18 +130,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5dbbdf2b2e813cfe0800000000000000
-      internalID: -1170064116241548331
+      spriteID: 2e344fa8d985329a0800000000000000
+      internalID: -6259061623450483742
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grass3_1
+      name: Wind_Rune_Sheet_1
       rect:
         serializedVersion: 2
         x: 32
-        y: 32
+        y: 0
         width: 32
         height: 32
       alignment: 0
@@ -152,18 +152,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6cf58603f87f2ecd0800000000000000
-      internalID: -2530187846264266810
+      spriteID: 6a01a655396e07650800000000000000
+      internalID: 6228731805120991398
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grass3_2
+      name: Wind_Rune_Sheet_2
       rect:
         serializedVersion: 2
         x: 64
-        y: 32
+        y: 0
         width: 32
         height: 32
       alignment: 0
@@ -174,39 +174,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f55726dfe2b492c80800000000000000
-      internalID: -8347057769162836641
+      spriteID: ee9286d386da58190800000000000000
+      internalID: -7960766103089042962
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grass3_3
+      name: Wind_Rune_Sheet_3
       rect:
         serializedVersion: 2
         x: 96
-        y: 32
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 4e3920f662117a550800000000000000
-      internalID: 6171920671103423460
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: grass3_4
-      rect:
-        serializedVersion: 2
-        x: 0
         y: 0
         width: 32
         height: 32
@@ -218,17 +196,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 679cddbb743adbd40800000000000000
-      internalID: 5601813040008644982
+      spriteID: 5715db796b29fe090800000000000000
+      internalID: -8003016699886612107
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grass3_5
+      name: Wind_Rune_Sheet_4
       rect:
         serializedVersion: 2
-        x: 32
+        x: 128
         y: 0
         width: 32
         height: 32
@@ -240,8 +218,30 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: af7ee0b4a1fee4f80800000000000000
-      internalID: -8120290181894969350
+      spriteID: bbbe53995ca9d9460800000000000000
+      internalID: 7250121148606049211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wind_Rune_Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21fa25d2ccfad3c00800000000000000
+      internalID: 882054393503067922
       vertices: []
       indices: 
       edges: []
@@ -250,7 +250,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 063d838983f129b40b4838b62b9a1d9b
+    spriteID: d375ba6939c90b645a901cddab9f9a99
     internalID: 0
     vertices: []
     indices: 
@@ -262,12 +262,12 @@ TextureImporter:
       - key: SpriteEditor.SliceSettings
         value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":32.0,"y":32.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      grass3_0: -1170064116241548331
-      grass3_1: -2530187846264266810
-      grass3_2: -8347057769162836641
-      grass3_3: 6171920671103423460
-      grass3_4: 5601813040008644982
-      grass3_5: -8120290181894969350
+      Wind_Rune_Sheet_0: -6259061623450483742
+      Wind_Rune_Sheet_1: 6228731805120991398
+      Wind_Rune_Sheet_2: -7960766103089042962
+      Wind_Rune_Sheet_3: -8003016699886612107
+      Wind_Rune_Sheet_4: 7250121148606049211
+      Wind_Rune_Sheet_5: 882054393503067922
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

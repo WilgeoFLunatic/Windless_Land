@@ -167,8 +167,8 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0.5}
-  m_Size: {x: 0.4, y: 1.05}
+  m_Offset: {x: 0, y: 0.33}
+  m_Size: {x: 0.4, y: 0.65}
   m_Direction: 0
 --- !u!61 &-6297112206304034417
 BoxCollider2D:
@@ -366,6 +366,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 84d16d2e846c8bd479f354aa1f235c5d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerController
+  RespawnObject: {fileID: 0}
   speed: 50
   stopDistance: 0.1
   holdPoint: {fileID: 0}
@@ -492,7 +493,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AudioDefination
   _playAudioEvent: {fileID: 11400000, guid: 9868e18e4665fb7448579116ddd8262c, type: 2}
-  _audioClip: {fileID: 8300000, guid: 6edd0b85e42670746a64e68faa283c67, type: 3}
+  _audioClips:
+  - {fileID: 8300000, guid: 6edd0b85e42670746a64e68faa283c67, type: 3}
   playOnEnable: 0
 --- !u!114 &6859593798252256479
 MonoBehaviour:
