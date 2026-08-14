@@ -14,7 +14,7 @@ public class ButtonDetective : MonoBehaviour
     {
         if (collision.CompareTag("Chest"))
         {
-            SetState(changeStateObj, true, duration, open);
+            SetActivate(true);
             SetSprite(button_actiavte);
 
         }
@@ -23,7 +23,7 @@ public class ButtonDetective : MonoBehaviour
     {
         if (collision.CompareTag("Chest"))
         {
-            SetState(changeStateObj, true, duration, open);
+            SetActivate(true);
             SetSprite(button_actiavte);
 
         }
@@ -33,21 +33,20 @@ public class ButtonDetective : MonoBehaviour
     {
         if (collision.CompareTag("Chest"))
         {
-            SetState(changeStateObj, false, duration, !open);
+            SetActivate(false);
             SetSprite(button_unactivate);
 
         }
     }
 
-
-    public void SetState(List<GameObject> objs, bool state, float duration, bool isKeepState)
+    void SetActivate(bool isActivated)
     {
-        //Debug.Log("WindToFan");
-        foreach (GameObject obj in objs)
+        foreach (var obj in changeStateObj)
         {
-            obj.GetComponent<BinaryStateObj>().Set(state, duration, isKeepState);
+            obj.SetActive(isActivated);
         }
     }
+
 
     public void SetSprite(Sprite _sprite)
     {
